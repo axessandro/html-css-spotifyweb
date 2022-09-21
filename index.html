@@ -170,20 +170,35 @@
         <!-- player center -->
         <div class="player-center display-flex flex-dir-col">
             <!-- player buttons -->
-            <div class="player-btn">
+            <div class="player-btn display-flex justify-center">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i id="btn-play" class="fa-solid fa-play"></i>
+                <i id="btn-play" class="fa-regular fa-circle-play"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
             <!-- player buttons -->
+            
+            <!-- player bar -->
+            <div class="player-bar display-flex spc-btwn">
+                <div class="time">0:25</div>
+                <div class="bar">
+                    <div class="current-time"><i class="fa-solid fa-circle"></i></div>
+                </div>
+                <div class="time">4:35</div>
+            </div>
+            <!-- /player bar -->
         </div>
         <!-- /player center -->
 
         <!-- player right -->
-        <div class="player-right">
-            
+        <div class="player-right display-flex">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="bar">
+                <div class="current-time"><i class="fa-solid fa-circle"></i></div>
+            </div>
         </div>
         <!-- /player right -->
 
