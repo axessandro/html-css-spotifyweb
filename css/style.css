@@ -143,8 +143,6 @@ main .card h3{
     height: var(--main-side-height);
     position: fixed;
     z-index: 999;
-
-    /* debug */
     background-color: black;
 }
 
@@ -153,6 +151,120 @@ main .card h3{
     width: auto;
     margin: 10px auto 10px 30px;
 }
+
+.sidebar > i{
+    font-size: 2rem;
+    margin: 10px auto 10px 30px;
+}
+
+.sidebar  i{
+    margin: 10px auto 10px 30px;
+}
+
+.sidebar-footer i:first-child{
+    margin-left: 2rem;
+    margin-top: 16rem;
+}
+
+/* section */
+.section svg{
+    height: 30px;
+    vertical-align: middle;
+    margin: 5px auto 5px 30px;
+}
+
+.section:not(:first-child){
+    color: var(--gray-font);
+}
+/* /section */
+
+/* playlist */
+
+.playlists h4{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.plus-icon{
+    display: inline-block;
+    background-color: var(--gray-font);
+    width: 40px;
+    height: 40px;
+    font-size: 2.5rem;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    margin: 10px auto 10px 30px;
+    vertical-align: middle;
+}
+
+.new-playlist span{
+    color: var(--gray-font);
+}
+
+.playlist{
+    color: var(--gray-font);
+    margin: 10px auto 10px 30px;   
+}
+
+/* /playlist */
+
+/* sidefooter */
+.sidebar-footer{
+    color: var(--gray-font);
+    margin-top: 4.5rem;
+}
+
+.sidebar-footer i:not(:first-child){
+    font-size: 2rem;
+}
+
+hr{
+    margin: 0.5rem 1.5rem;
+    border: 1px solid ;
+}
+
+.sidebar-footer i{
+    vertical-align: middle;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.sidebar-footer h4{
+    display: inline-block;
+    color: white;
+}
+
+.sidebar-footer span{
+    font-size: 0.8rem;
+}
+/* /sidefooter */
+
+/* media */
+/* mobile */
+@media screen and (max-width: 599px){
+    .sidebar span,
+    .sidebar .playlists,
+    .sidebar h4,
+    .sidebar hr,
+    .logo-text{
+        display: none;
+    }
+
+    .sidebar-footer i{
+        display: block;
+    }
+
+    .sidebar{
+        width: 100px;
+        
+    }
+
+    main{
+        margin-left: 100px;
+    }
+}
+/* /media */
 /*------------ /SIDEBAR -------------*/
 
 /*------------ MAIN -------------*/
@@ -213,7 +325,15 @@ main .categories li a{
         width: calc(100% / 2 - 1em);
     }
 }
+/* mobile */
+@media screen and (max-width: 599px){
+    main{
+        margin-left: 100px;
+    }
+}
 /* /media */
+/* /media */
+
 /*------------ /MAIN -------------*/
 
 /*------------ PLAYER -------------*/
