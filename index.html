@@ -18,7 +18,7 @@
 
     <!-- CTA -->
     <div class="cta">
-        <a href="#">EFFETTUA L'UPGRADE</a>
+        <div class="cta-btn"><a href="#">EFFETTUA L'UPGRADE</a></div>
     </div>
     <!-- /CTA -->
 
@@ -36,29 +36,29 @@
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                         <span>Home</span>
                     </div>
-                    <div class="section search">
-                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#7d7f8496" fill-rule="evenodd"/></svg>
+                    <div class="section search grayclass">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
                         <span>Cerca</span>
                     </div>
-                    <div class="section library">
-                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#7d7f8496"/></svg>
+                    <div class="section library grayclass">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>
                         <span>La tua libreria</span>
                     </div>
                 </div>
                 <div class="playlists">
                     <h4>PLAYLIST</h4>
-                    <div class="new-playlist">
+                    <div class="new-playlist grayclass">
                         <div class="plus-icon">+</div>
                         <span>Crea Playlist</span>
                     </div>
                     <ul>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
-                        <li><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
+                        <li class="grayclass"><a class="playlist" href="#">Nome Playlist</a></li>
                     </ul>
                     </div>
             </div>
@@ -77,12 +77,12 @@
         <main>
             <!-- categories -->
             <ul class="categories mt-1 mb-1 display-flex justify-center">
-                <li><a href="#">IN EVIDENZA</a></li>
-                <li><a href="#">PODCAST</a></li>
-                <li><a href="#">CLASSIFICHE</a></li>
-                <li><a href="#">GENERI E MOOD</a></li>
-                <li><a href="#">NUOVE USCITE</a></li>
-                <li><a href="#">SCOPRI</a></li>
+                <li><a href="#">IN EVIDENZA</a><hr></li>
+                <li class="grayclass"><a href="#">PODCAST</a></li>
+                <li class="grayclass"><a href="#">CLASSIFICHE</a></li>
+                <li class="grayclass"><a href="#">GENERI E MOOD</a></li>
+                <li class="grayclass"><a href="#">NUOVE USCITE</a></li>
+                <li class="grayclass"><a href="#">SCOPRI</a></li>
             </ul>
             <!-- /categories -->
             <!-- recently played -->
@@ -91,32 +91,50 @@
                 
                 <!-- cards -->
                 <div class="card">
-                    <img src="img/metal_lifting.jpg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Heavy Metal</h2>
                     <h3>Subtitle</h3>
                 </div>
                 <div class="card">
-                    <img src="img/stranger.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/stranger.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
                     <h3>Kyle Dixon & Michael Stein</h3>
                 </div>
                 <div class="card">
-                    <img src="img/aquietplace.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>A quiet place</h2>
                     <h3>Subtitle</h3>
                 </div>
                 <div class="card">
-                    <img src="img/split.jpeg" alt="">
+                    <div class="card-img-container">
+                       <img src="img/split.jpeg" alt="">
+                       <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Split</h2>
                     <h3>Subtitle</h3>
                 </div>
                 <div class="card">
-                    <img src="img/cure.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/cure.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>A cure of wellness</h2>
                     <h3>Subtitle</h3>
                 </div>
                 <div class="card">
-                    <img src="img/sinister.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/sinister.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Sinister</h2>
                     <h3>Subtitle</h3>
                 </div>
@@ -131,12 +149,18 @@
                 
                 <!-- cards -->
                 <div class="card">
-                    <img src="img/radar.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img src="img/radar.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Release Radar</h2>
                    
                 </div>
                 <div class="card">
-                    <img src="img/mixdaily.jpeg" alt="">
+                    <div class="card-img-container">
+                       <img src="img/mixdaily.jpeg" alt="">
+                       <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Daily Mix</h2>
                    
                 </div>
@@ -150,11 +174,17 @@
                 
                 <!-- cards -->
                 <div class="card">
-                    <img class="circle" src="img/youg.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img class="circle" src="img/youg.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Lana del Rey</h2>
                 </div>
                 <div class="card">
-                    <img class="circle" src="img/einaudi.jpeg" alt="">
+                    <div class="card-img-container">
+                        <img class="circle" src="img/einaudi.jpeg" alt="">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </div>
                     <h2>Ludovico Einaudi</h2>
                 </div>
             </div>
@@ -174,15 +204,15 @@
                 <img src="img/player_left.jpg" alt="">
                     <div class="text-player">
                     <h4>Hilltop Hoods</h4>
-                    <h5>Clark Griswold</h5>
+                    <h5 class="grayclass underline"><a href="#">Clark Griswold</a></h5>
                 </div>
             </div>
             <!-- card -->
             
             <!-- like-folder -->
             <div class="like-folder display-flex">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart grayclass"></i>
+                <i class="fa-regular fa-folder grayclass"></i>
             </div>
             <!-- like-folder -->
 
