@@ -157,13 +157,17 @@ main .card h3{
     background-color: rgb(0, 0, 0);
 }
 
+.sidebar .logotext-container svg{
+    height: 35px;
+}
+
 .sidebar-main{
     height: calc(100% - 60px);
+    background-color: black;
 }
 
 .sidebar svg{
-    height: 40px;
-    width: auto;
+    height: 30px;
     margin: 10px auto 10px 30px;
 }
 
@@ -177,15 +181,9 @@ main .card h3{
     margin: 10px auto 10px 30px;
 }
 
-.sidebar-footer i:first-child{
-    margin-left: 2rem;
-    margin-top: 16rem;
-}
-
 /* section */
 .sections{
     height: 120px;
-    background-color: red;
 }
 
 .section svg{
@@ -201,11 +199,11 @@ main .card h3{
 
 /* playlist */
 .playlists{
-    background-color: aqua;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     flex-grow: 1;
     overflow-y: auto;
+
 }
 
 .playlists h4{
@@ -231,7 +229,13 @@ main .card h3{
 
 .playlist{
     color: var(--gray-font);
-    margin: 10px auto 10px 30px;   
+    margin-left: 30px;   
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.playlists ul li{
+    margin-bottom: 10px;
 }
 
 /* /playlist */
@@ -239,35 +243,37 @@ main .card h3{
 /* sidefooter */
 .sidebar-footer{
     color: var(--gray-font);
-    background-color: #ADFF2F;
-    height: 400px;
-    min-height: 150px;
+    width: 250px;
+    height: 80px;
+    min-height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 100px;
 }
 
-.sidebar-footer i:not(:first-child){
-    font-size: 2rem;
+.sidebar-footer h5,
+.sidebar-footer h4{
+    display: inline-block;
 }
 
-hr{
-    margin: 0.5rem 1.5rem;
-    border: 1px solid ;
-}
-
-.sidebar-footer i{
-    vertical-align: middle;
-    margin-left: 1.5rem;
-    margin-right: 0.5rem;
+.sidebar-footer hr{
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid var(--gray-font);
 }
 
 .sidebar-footer h4{
-    display: inline-block;
     color: white;
-    width: 100%;
+    vertical-align: middle;
 }
 
-.sidebar-footer span{
-    font-size: 0.8rem;
+.sidebar-footer i:nth-child(4){
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
 }
+
+
 /* /sidefooter */
 
 /* media */
@@ -275,6 +281,7 @@ hr{
 @media screen and (max-width: 599px){
     .sidebar span,
     .sidebar .playlists,
+    .sidebar h5,
     .sidebar h4,
     .sidebar hr,
     .logo-text{
@@ -283,6 +290,19 @@ hr{
 
     .sidebar-footer i{
         display: block;
+    }
+
+    .section svg,
+    .sidebar i{
+        margin-left: 15px;
+    }
+
+    .sidebar-footer i:first-child{
+        margin-left: 22px;
+    }
+
+    .sidebar-footer i{
+        margin-left: 20px;
     }
 
     .sidebar > i{
@@ -567,3 +587,5 @@ main .categories li a{
 }
 /* /media */
 /*------------ /PLAYER -------------*/
+
+/* ------------------------------------- HOVER ------------------------------------------------ */
