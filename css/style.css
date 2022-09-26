@@ -407,6 +407,9 @@ main .categories li a{
     main{
         margin-left: 60px;
     }
+    .sidebar-footer{
+        width: 60px;
+    }
 }
 /* /media */
 /* /media */
